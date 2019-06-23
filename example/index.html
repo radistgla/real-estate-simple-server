@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(event) {
+        apiBaseUrl = 'http://localhost:3000/api';
+
+        // Uncomment one of examples below to run it
+
+        // Get all suppliers example
+        // axios.get(`${apiBaseUrl}/suppliers`).then((response) => console.log('all suppliers', response.data));
+
+        // Get all houses example
+        // axios.get(`${apiBaseUrl}/houses`).then((response) => console.log('all houses', response.data));
+
+        // Get all houses from Bernarr Lanaway (supplierId === "f8ec36d1-1f04-4bd9-91d6-435448246ef5")
+        // const supplierId = 'f8ec36d1-1f04-4bd9-91d6-435448246ef5';
+        // axios.get(`${apiBaseUrl}/houses/${supplierId}`).then((response) => console.log('houses for "f8ec36d1-1f04-4bd9-91d6-435448246ef5"', response.data));
+
+        // Add new supplier to "database" example
+        // const newSupplier = {
+        //   first_name: 'Leeroooooooooooooy',
+        //   last_name: 'Jeeeeeenkins',
+        //   email: 'leeroy@opensource.org',
+        //   username: 'dragon_slayer777'
+        // };
+        // axios.post(`${apiBaseUrl}/suppliers`, { supplier: newSupplier }).then((response) => console.log(`success response with ${response.status} code`));
+
+        // Add new house to "database" example
+        // const newHouse = {
+        //   city: 'Agraba',
+        //   address: '5 Sand Street',
+        //   supplierId: 'f8ec36d1-1f04-4bd9-91d6-435448246ef5',
+        //   floors: 15,
+        //   year: 2009
+        // };
+        // axios.post(`${apiBaseUrl}/houses`, { house: newHouse }).then((response) => console.log(`success response with ${response.status} code`));
+      });
+    </script>
+  </body>
+</html>
